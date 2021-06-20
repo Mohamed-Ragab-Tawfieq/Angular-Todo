@@ -18,10 +18,11 @@ section {
   }
   .mat-list {
     .mat-list-item {
-      // display: flex;
-      // justify-content: space-between;
       &:nth-child(2n + 1) {
         background-color: #ddd;
+      }
+      .lined {
+        text-decoration: line-through;
       }
       .mat-icon {
         margin-left: auto;

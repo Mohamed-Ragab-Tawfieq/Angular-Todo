@@ -6,9 +6,7 @@ import { Component, ViewChild } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Angular-App';
   items = ['ali', 'omar'];
-  value = 'Clear me';
   // @ViewChild('item') itemInput: string;
   addItem(param: string) {
     this.items.push(param)
