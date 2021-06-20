@@ -12,7 +12,7 @@ export class AppComponent {
   // @ViewChild('item') itemInput: string;
   addItem(param: string) {
     this.items.push(param)
-    console.log(this.items);
+    param = '';
   }
   delete(itemID: number) {
     this.items.splice(itemID, 1);
