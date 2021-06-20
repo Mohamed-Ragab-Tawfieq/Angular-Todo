@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Angular-tic-tac": {
+    "Angular-App": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Angular-tic-tac",
+            "outputPath": "dist/Angular-App",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -31,6 +31,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -72,10 +73,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Angular-tic-tac:build:production"
+              "browserTarget": "Angular-App:build:production"
             },
             "development": {
-              "browserTarget": "Angular-tic-tac:build:development"
+              "browserTarget": "Angular-App:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +84,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Angular-tic-tac:build"
+            "browserTarget": "Angular-App:build"
           }
         },
         "test": {
@@ -99,6 +100,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -107,5 +109,5 @@
       }
     }
   },
-  "defaultProject": "Angular-tic-tac"
+  "defaultProject": "Angular-App"
 }
